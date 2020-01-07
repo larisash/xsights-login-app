@@ -1,0 +1,8 @@
+<div *ngIf="!newUser" class="container">
+  <alerts></alerts>
+  <login (needToRegister)="changeToNotAMember($event)"></login>
+</div>
+<div *ngIf="newUser" class="container">
+  <alerts></alerts>
+  <registration (goToLogin)="changeToMember($event)"></registration>
+</div>
