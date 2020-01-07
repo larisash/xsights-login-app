@@ -20,5 +20,6 @@ export class LayoutPageComponent implements OnInit {
   }
   logout() {
     this.authService.logout();
+    //this is a changes
   }
 }
